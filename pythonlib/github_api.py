@@ -10,8 +10,8 @@ def search_avatar(user):
 
     """
     url = f'https://api.github.com/users/{user}'
-    resposta = requests.get(url)
-    return resposta.json()['avatar_url']
+    response = requests.get(url)
+    return response.json()['avatar_url']
 
 
 if __name__ == '__main__':
